@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="top"
+    tools:context=".HomeParentActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_login_hero"
+            android:focusableInTouchMode="true"
+
+            tools:context=".HomeParent1">
+
+            <TextView
+                android:id="@+id/hello_tina_"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="-10dp"
+                android:gravity="left"
+                android:paddingTop="25dp"
+                android:textAppearance="@style/hello_tina_"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/balance_79_"
+                android:layout_width="101dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="278dp"
+                android:layout_marginTop="70dp"
+                android:gravity="top"
+                android:textAppearance="@style/balance_79_"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tommy_is_on"
+                android:layout_width="204dp"
+                android:layout_height="79dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="70dp"
+                android:gravity="top"
+                android:textAppearance="@style/tommy_is_on" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+                <!-- <ImageView
+                    android:id="@+id/button_login"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:background="@drawable/insights"
+                    android:onClick = "onLoginClick"
+                    tools:ignore="OnClick"/>
+                <ImageView
+                    android:id="@+id/button_login2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:background="@drawable/insights"
+                    android:onClick = "onLoginClick"
+                    tools:ignore="OnClick"
+                    />
+                <ImageView
+                    android:id="@+id/button_login3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:background="@drawable/insights"
+                    android:onClick = "onLoginClick"
+                    tools:ignore="OnClick"
+                    />
+                <ImageView
+                    android:id="@+id/button_login4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:background="@drawable/insights"
+                    android:onClick = "onLoginClick"
+                    tools:ignore="OnClick"
+                    />
+
+
+            </LinearLayout>-->
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart1"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:layout_marginBottom="@dimen/loginViewsMargin"
+                android:layout_width="350dp"
+                android:paddingLeft="100dp"
+                android:layout_height="500dp"
+
+                />
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/topUpButton"
+                style="@style/topUpButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="Top-up Account"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#9FFAD9"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp"
+                android:textColor="@color/whiteTextColor"
+                android:onClick = "onLoginClick"
+                tools:ignore="OnClick" />
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/addTransaction"
+                style="@style/topUpButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="Add Transaction"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#9FFAD9"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp"
+                android:textColor="@color/whiteTextColor"
+                android:onClick = "onLoginClick"
+                tools:ignore="OnClick" />
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/viewHistory"
+                style="@style/topUpButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="View Transaction History"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#9FFAD9"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp"
+                android:textColor="@color/whiteTextColor"
+                android:onClick = "onLoginClick"
+                tools:ignore="OnClick" />
+
+
+
+
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/chanegAcc"
+                style="@style/topUpButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="Change Child Account"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#9FFAD9"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp"
+                android:onClick = "onLoginClick"
+                android:textColor="@color/whiteTextColor"
+                tools:ignore="OnClick" />
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/signOut"
+                style="@style/home"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="Sign Out"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#9FFAD9"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp"
+                android:textSize="15sp"
+                android:onClick = "onLoginClick"
+                android:layout_marginBottom="@dimen/loginViewsMargin"
+                android:textColor="@color/pinkParent"
+                tools:ignore="OnClick" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!--<TextView
+            style="@style/viewParent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/welcome"
+            android:textColor=" #5E5E5E"
+
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/regChildButton"
+            style="@style/loginButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:onClick="onRegisterClick"
+            android:text="Register Child"
+            app:initialCornerAngle="27dp"
+            app:spinning_bar_color="#9FFAD9"
+            app:spinning_bar_padding="6dp"
+            app:spinning_bar_width="4dp"
+            tools:ignore="OnClick" /> -->
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

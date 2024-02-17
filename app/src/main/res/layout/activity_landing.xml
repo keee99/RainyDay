@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="top"
+    tools:context=".LandingActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/newlogo" />
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Loading..."
+                android:textColor=" #5E5E5E"
+
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+
+
+
+            <!--<Spinner
+                android:id="@+id/selChildDropDown"
+                style="@style/loginButton"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:layout_gravity="center_horizontal"
+                android:spinnerMode="dropdown"
+                android:hint="Select Child"
+
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#9FFAD9"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp"
+                app:layout_constraintStart_toStartOf="parent" /> -->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

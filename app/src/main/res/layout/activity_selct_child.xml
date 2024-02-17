@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="top"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-42dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/newlogo" />
+
+            <TextView
+                android:id="@+id/welcome"
+                style="@style/viewParent"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor=" #5E5E5E"
+                android:text="Loading Children..."
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/childbuttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        </LinearLayout>
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/logoutButton"
+                style="@style/home2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:textSize="15sp"
+                android:text="Sign Out"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#9FFAD9"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp"
+                android:textColor="@color/primaryTextColor"
+                android:layout_marginBottom="@dimen/loginViewsMargin" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

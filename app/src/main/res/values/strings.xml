@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Rainy Day</string>
+
+    <!--  Login Stuff  -->
+    <string name="login_email_hint">Email</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_to_register">New User? Register Here!</string>
+
+    <string name="welcome">Welcome! </string>
+    <string name="Welcome" />
+    <string name="title_activity_selct_child">Select Child </string>
+
+
+    <string-array name="children">
+        <item>Bobby</item>
+        <item>Jane</item>
+
+    </string-array>
+    <string name="hello_tina_">
+
+Hello Tina!
+</string>
+    <string name="tommy_is_on">
+
+You are viewing Tommy\'s account.
+</string>
+    <string name="balance_79_">
+
+Balance\n $ 79.60
+</string>
+    <!-- strings.xml -->
+    <string name="add_transac">
+
+Add \nTransaction
+</string>
+    <string name="set_monthly">
+
+Set Monthly \nTargets
+</string>
+
+
+
+    <!-- strings.xml -->
+    <string name="insights">
+
+Insights
+</string>
+
+
+
+
+
+
+
+</resources>
